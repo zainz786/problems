@@ -7,7 +7,5 @@ function converted (a: number, b: number) : String {
     let yuan: number = a*b;
     const str: string = yuan.toFixed(2).toString() + " Chinese Yuan";
     return str;
-      
 }
-
 console.log(converted(dollars,conversion));
