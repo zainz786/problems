@@ -1,11 +1,11 @@
 function passValidate(pass:string): boolean{
     let valid: boolean = true
     //creates an expression to show there is atleast 1 uppercase 
-    const upperCase = new RegExp(/(?=.*[A-Z])/g)
+    const upperCase = new RegExp(/(?=.*[A-Z])/)
     //creates an expression to show there is atleast 1 lowercase
-    const lowerCase = new RegExp(/(?=.*[a-z])/g)
+    const lowerCase = new RegExp(/(?=.*[a-z])/)
     //creates an expression to show there is atleast 1 number
-    const numeric = new RegExp(/(?=.*[0-9])/g)
+    const numeric = new RegExp(/(?=.*[0-9])/)
     //Simple check before validating contents of password
     if (pass.length < 8){
         valid = false;
@@ -22,4 +22,4 @@ function passValidate(pass:string): boolean{
     return valid
 }
 
-console.log(passValidate("hello"))
+console.log(passValidate("hellor"))
